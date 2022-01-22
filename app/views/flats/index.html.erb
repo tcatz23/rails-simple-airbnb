@@ -1,0 +1,14 @@
+<h2>All our Flats (4) <i class="fab fa-algolia"></i></h2>
+
+<% @flats.each do |flat| %>
+  <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= flat.name %></h5>
+      <p class="card-text"><%= flat.address %></p>
+      <p class="card-text"><i class="fas fa-user-friends"> <%= flat.number_of_guests%></i>  <i class="fas fa-dollar-sign"> <%= flat.price_per_night%></i></p>
+
+      <a href="#" class="btn btn-primary"></a>
+    </div>
+  </div>
+<% end %>
